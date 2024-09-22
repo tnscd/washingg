@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ломбард</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <ul>
+                <li><a href="#">Товары</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul> -->
+            <!-- <div class="cart">
+                <a href="#" onclick="toggleCart()">Корзина (<span id="cart-count">0</span>)</a>
+            </div> -->
+            
+            <p style="font-size: 35px;">Modern Washing</p>
+        </nav>
+    </header>
+    <section>
+        <div class="image" style="display: flex; padding-top: 150px;">
+            <div class="image__img">
+                <img src="./img/webcam-toy-photo2.jpg" alt="" style="min-height: 300px; max-width: 450px; width: 400px;">
+            </div>
+            <div class="text"><p style="color: #000; padding-left: 20px;"> Здравствуйте. Тимофей. Владелец сети современных моек <br>  </p></div>
+            
+        </div>
+    </section>
+    <section><div class="flowers"><img src="img/1x.png" alt=""></div>
+        <div class="flowers" style="display: flex;justify-content: center;"><img src="img/azino.jfif" alt=""></div>
+    </section>
+    <main class="page">
+        <aside class="filters" style="flex:1 0 25%">
+            Автоматическая бесконтактная мойка <br> <br>
+            Мойка RoboWash создана на базе современных американских технологий для бесконтактной мойки автомобилей с использованием специального робота-манипулятора, который вращается вокруг автомобиля на 3600 и выполняет все автомоечные функции.
+        </aside>
+
+       <section>
+        <img src="img/w.jpg" alt="">
+       </section>
+    </main>
+
+    <footer>
+        <address>
+            Екатеринбург.Modern Washing 2024<br>
+            Тимофей телефон: +447800767690
+        </address>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleCart()">&times;</span>
+            <h2>Корзина</h2>
+            <ul id="cart-items"></ul>
+            <p>Итого: <span id="total-price">0</span> тг.</p>
+            <button onclick="checkout()">Оформить заказ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
